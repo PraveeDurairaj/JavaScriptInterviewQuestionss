@@ -1,0 +1,29 @@
+<script>
+    let arr1 = [1,3,5,6,8];
+    let arr2 = [1,3,5,6,8];
+    
+    function Compare2Array(a,b){
+        let ArraySame = false;
+        if(a.length==b.length){
+             for(i=0;i<a.length;++i){
+                if(a[i]==b[i]){
+                  ArraySame = true
+                }
+                else{
+                    ArraySame = false
+                }
+             }
+             if(ArraySame == true){
+                console.log('array is qual')
+             }
+             else{
+                console.log('its not equal')
+             }
+        }
+        else{
+            console.log('its not equal')
+        }
+
+    }
+    Compare2Array(arr1,arr2)
+</script>
